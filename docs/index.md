@@ -1,7 +1,12 @@
+---
+layout: default
+title: "Cardinal3D"
+permalink: /
+---
 
-# Scotty3D
+# Cardinal3D
 
-Welcome to Scotty3D! This 3D graphics software package includes components for interactive mesh
+Welcome to Cardinal3D! This 3D graphics software package includes components for interactive mesh
 editing, realistic path tracing, and dynamic animation. Implementing functionality in each of these areas
 constitutes the majority of the coursework for 15-462/662 (Computer Graphics) at Carnegie Mellon University
 
