@@ -1,8 +1,6 @@
 
 # Cardinal3D
 
-![Ubuntu Build Status](https://github.com/stanford-cs248/Cardinal3D/workflows/Ubuntu/badge.svg) ![MacOS Build Status](https://github.com/stanford-cs248/Cardinal3D/workflows/MacOS/badge.svg) ![Windows Build Status](https://github.com/stanford-cs248/Cardinal3D/workflows/Windows/badge.svg)
-
 Welcome to Cardinal3D! This 3D graphics software package includes components for interactive mesh
 editing, realistic path tracing, and dynamic animation. Implementing functionality in each of these areas
 constitutes the majority of the coursework for CS248 (Interactive Computer Graphics) at Stanford University
