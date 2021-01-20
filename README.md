@@ -1,13 +1,13 @@
 
-# Scotty3D
+# Cardinal3D
 
-![Ubuntu Build Status](https://github.com/CMU-Graphics/Scotty3D/workflows/Ubuntu/badge.svg) ![MacOS Build Status](https://github.com/CMU-Graphics/Scotty3D/workflows/MacOS/badge.svg) ![Windows Build Status](https://github.com/CMU-Graphics/Scotty3D/workflows/Windows/badge.svg)
+![Ubuntu Build Status](https://github.com/stanford-cs248/Cardinal3D/workflows/Ubuntu/badge.svg) ![MacOS Build Status](https://github.com/stanford-cs248/Cardinal3D/workflows/MacOS/badge.svg) ![Windows Build Status](https://github.com/stanford-cs248/Cardinal3D/workflows/Windows/badge.svg)
 
-Welcome to Scotty3D! This 3D graphics software package includes components for interactive mesh
+Welcome to Cardinal3D! This 3D graphics software package includes components for interactive mesh
 editing, realistic path tracing, and dynamic animation. Implementing functionality in each of these areas
-constitutes the majority of the coursework for 15-462/662 (Computer Graphics) at Carnegie Mellon University
+constitutes the majority of the coursework for CS248 (Interactive Computer Graphics) at Stanford University
 
-Please visit the [documentation website](https://cmu-graphics.github.io/Scotty3D/).
+Please visit the [documentation website](https://stanford-cs248.github.io/Cardinal3D/).
 
 ## Sampled Student Work (Fall 2020)
 
