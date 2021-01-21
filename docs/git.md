@@ -34,7 +34,7 @@ The easiest (but not recommended) way is to download a zip from GitHub and make 
     - We can now push the starter code to our private copy:
         - `git push origin -u master`
 
-5. Congratulations! you have successfully _mirrored_ a git repository with all past commits intact. Let's see a case where this becomes very useful: we start doing an assignment and commit regularly to our private repo (our `origin`). Then the 15-462 staff push some new changes to the Cardinal3D skeleton code. We now want to pull the changes from our `sourcerepo`. But, we don't want to mess up the changes we've added to our private copy. Here's where git comes to the rescue:
+5. Congratulations! you have successfully _mirrored_ a git repository with all past commits intact. Let's see a case where this becomes very useful: we start doing an assignment and commit regularly to our private repo (our `origin`). Then the CS248 staff push some new changes to the Cardinal3D skeleton code. We now want to pull the changes from our `sourcerepo`. But, we don't want to mess up the changes we've added to our private copy. Here's where git comes to the rescue:
     - First commit all current changes to your `origin`
     - Run `git pull sourcerepo master` - this pulls all the changes from `sourcerepo` into your local folder
     - If there are files that differ in your `origin` and in the `sourcerepo`, git will attempt to automatically merge the changes. Git may create a "merge" commit for this. 
