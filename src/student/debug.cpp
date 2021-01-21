@@ -31,7 +31,7 @@ Debug_Data debug_data;
     Then, bool_variable will always reflect the state of the checkbox.
 
     These constructs are composable to make pretty advanced UI elements!
-    The whole Scotty3D UI is implemented in this way.
+    The whole Cardinal3D UI is implemented in this way.
 
     Some useful functions are documented below, and you can refer to
     deps/imgui/imgui.h for many more.

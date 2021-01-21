@@ -6,7 +6,7 @@ permalink: /pathtracer/
 
 # PathTracer Overview
 
-PathTracer is (as the name suggests) a simple path tracer that can render scenes with global illumination. The first part of the assignment will focus on providing an efficient implementation of **ray-scene geometry queries**. In the second half of the assignment you will **add the ability to simulate how light bounces around the scene**, which will allow your renderer to synthesize much higher-quality images. Much like in MeshEdit, input scenes are defined in COLLADA files, so you can create your own scenes to render using Scotty3D or other free software like [Blender](https://www.blender.org/).
+PathTracer is (as the name suggests) a simple path tracer that can render scenes with global illumination. The first part of the assignment will focus on providing an efficient implementation of **ray-scene geometry queries**. In the second half of the assignment you will **add the ability to simulate how light bounces around the scene**, which will allow your renderer to synthesize much higher-quality images. Much like in MeshEdit, input scenes are defined in COLLADA files, so you can create your own scenes to render using Cardinal3D or other free software like [Blender](https://www.blender.org/).
 
 ![CBsphere](new_results/32k_large.png)
 

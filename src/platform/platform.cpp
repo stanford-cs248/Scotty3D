@@ -66,7 +66,7 @@ void Platform::platform_init() {
 
     Vec2 wsize = Vec2(1280, 720);
 
-    window = SDL_CreateWindow("Scotty3D", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+    window = SDL_CreateWindow("Cardinal3D", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
                               (int)wsize.x, (int)wsize.y,
                               SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
     if(!window) {

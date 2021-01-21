@@ -6,7 +6,7 @@ permalink: /meshedit/bevel/
 
 # Beveling 
 
-Here we provide some additional detail about the bevel operations and their implementation in Scotty3D. Each bevel operation has two components:
+Here we provide some additional detail about the bevel operations and their implementation in Cardinal3D. Each bevel operation has two components:
 
 1.  a method that modifies the _connectivity_ of the mesh, creating new beveled elements, and
 2.  a method the updates the _geometry_ of the mesh, insetting and offseting the new vertices according to user input.

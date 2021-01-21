@@ -10,21 +10,21 @@ Welcome to Cardinal3D! This 3D graphics software package includes components for
 editing, realistic path tracing, and dynamic animation. Implementing functionality in each of these areas
 constitutes the majority of the coursework for 15-462/662 (Computer Graphics) at Carnegie Mellon University
 
-These pages describe how to set up and use Scotty3D. Start here!
-- [Git Setup](git): create a private git mirror that can pull changes from Scotty3D. 
-- [Building Scotty3D](build): build and run Scotty3D on various platforms.
+These pages describe how to set up and use Cardinal3D. Start here!
+- [Git Setup](git): create a private git mirror that can pull changes from Cardinal3D. 
+- [Building Cardinal3D](build): build and run Cardinal3D on various platforms.
 - [User Guide](guide): learn the intended functionality for end users.
 
-The developer manual describes what you must implement to complete Scotty3D. It is organized under the three main components of the software:
+The developer manual describes what you must implement to complete Cardinal3D. It is organized under the three main components of the software:
 - [MeshEdit](meshedit)
 - [PathTracer](pathtracer)
 - [Animation](animation)
 
 ## Project Philosophy
 
-Welcome to your first day of work at Scotty Industries! Over the next few months
-you will implement core features in Scotty Industries' flagship product
-Scotty3D, which is a modern package for 3D modeling, rendering, and animation.
+Welcome to your first day of work at Cardinal Industries! Over the next few months
+you will implement core features in Cardinal Industries' flagship product
+Cardinal3D, which is a modern package for 3D modeling, rendering, and animation.
 In terms of basic structure, this package doesn't look much different from
 "real" 3D tools like Maya, Blender, modo, or Houdini. Your overarching goal is
 to use the developer manual to implement a package that

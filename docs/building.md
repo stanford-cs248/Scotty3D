@@ -1,16 +1,15 @@
 ---
 layout: default
-title: "Building Scotty3D"
+title: "Building Cardinal3D"
 permalink: /build/
 ---
 
-# Building Scotty3D
+# Building Cardinal3D
 
-![Ubuntu Build Status](https://github.com/CMU-Graphics/Scotty3D/workflows/Ubuntu/badge.svg) ![MacOS Build Status](https://github.com/CMU-Graphics/Scotty3D/workflows/MacOS/badge.svg) ![Windows Build Status](https://github.com/CMU-Graphics/Scotty3D/workflows/Windows/badge.svg)
 
 To get a copy of the codebase, see [Git Setup](git).
 
-Note: the first build on any platform will be very slow, as it must compile most dependencies. Subsequent builds will only need to re-compile your edited Scotty3D code.
+Note: the first build on any platform will be very slow, as it must compile most dependencies. Subsequent builds will only need to re-compile your edited Cardinal3D code.
 
 ### Linux 
 
@@ -33,7 +32,7 @@ cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo ..
 make -j4
 ```
 
-The same process should also work modified for your distro/package manager of choice. Note that if you are using Wayland, you may need to set the environment variable ``SDL_VIDEODRIVER=wayland`` when running ``Scotty3D`` for acceptable performance.
+The same process should also work modified for your distro/package manager of choice. Note that if you are using Wayland, you may need to set the environment variable ``SDL_VIDEODRIVER=wayland`` when running ``Cardinal3D`` for acceptable performance.
 
 Notes:
 - You can instead use ``cmake -DCMAKE_BUILD_TYPE=Debug ..`` to build in debug mode, which, while far slower, makes the debugging experience much more intuitive.
@@ -48,7 +47,7 @@ You can download CMake for windows [here](https://cmake.org/download/).
 
 Once the Visual Studio compiler (MSVC) is installed, you can access it by running "Developer Command Prompt for VS 2019," which opens a terminal with the utilities in scope. The compiler is called ``cl``. You can also import these utilities in any terminal session by running the script installed at ``C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat``. 
 
-We also provide a simple script, ``build_win.bat``, that will automatically import the compiler and build the project. You should be able to simply run it in the project root to build. ``Scotty3D.exe`` will be generated under ``build/RelWithDebInfo/``.
+We also provide a simple script, ``build_win.bat``, that will automatically import the compiler and build the project. You should be able to simply run it in the project root to build. ``Cardinal3D.exe`` will be generated under ``build/RelWithDebInfo/``.
 
 If you want to build manually, the steps (assuming MSVC is in scope) are:
 ```
@@ -60,7 +59,7 @@ cmake --build . --config RelWithDebInfo
 
 You can also use ``--config Debug`` to build in debug mode, which, while far slower, makes the debugging experience much more intuitive. If you swap this, be sure to make a new build directory for it.
 
-Finally, also note that ``cmake ..`` generates a Visual Studio solution file in the current directory. You can open this solution (``Scotty3D.sln``) in Visual Studio itself and use its interface to build, run, and debug the project. (Using the Visual Studio debugger or the provided VSCode launch options for debugging is highly recommended.)
+Finally, also note that ``cmake ..`` generates a Visual Studio solution file in the current directory. You can open this solution (``Cardinal3D.sln``) in Visual Studio itself and use its interface to build, run, and debug the project. (Using the Visual Studio debugger or the provided VSCode launch options for debugging is highly recommended.)
 
 ### MacOS
 

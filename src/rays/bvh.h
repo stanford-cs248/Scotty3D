@@ -46,7 +46,7 @@ private:
 
 } // namespace PT
 
-#ifdef SCOTTY3D_BUILD_REF
+#ifdef CARDINAL3D_BUILD_REF
 #include "../reference/bvh.inl"
 #else
 #include "../student/bvh.inl"

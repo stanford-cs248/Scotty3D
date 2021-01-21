@@ -6,7 +6,7 @@ permalink: /guide/layout/
 
 # Layout
 
-This is the main scene editing mode in Scotty3D, and does not contain tasks for the student to implement. 
+This is the main scene editing mode in Cardinal3D, and does not contain tasks for the student to implement. 
 This mode allows you to load full scenes from disk, create or load new objects, export your scene (COLLADA format), and edit transformations that place each object into your scene.
 
 ## Creating Objects
@@ -18,7 +18,7 @@ There are three ways to add objects to your scene:
 
 To save your scene to disk (including all meshes and their transformations) use the `Export Scene` option.
 
-Scotty3D supports loading objects from the following file formats:
+Cardinal3D supports loading objects from the following file formats:
 - dae (COLLADA)
 - obj
 - fbx
@@ -28,7 +28,7 @@ Scotty3D supports loading objects from the following file formats:
 - blend
 - ply
 
-Scotty3D only supports exporting scenes to COLLADA.
+Cardinal3D only supports exporting scenes to COLLADA.
 
 ## Managing Objects
 

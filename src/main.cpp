@@ -8,7 +8,7 @@ int main(int argc, char** argv) {
     RNG::seed();
 
     App::Settings settings;
-    CLI::App args{"Scotty3D - 15-462"};
+    CLI::App args{"Cardinal3D - 15-462"};
 
     args.add_option("-s,--scene", settings.scene_file, "Scene file to load");
     args.add_option("--env_map", settings.env_map_file, "Override scene environment map");

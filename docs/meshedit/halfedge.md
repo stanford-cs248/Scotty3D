@@ -8,7 +8,7 @@ permalink: /meshedit/halfedge
 
 ## Geometric Data Structures
 
-Scotty3D uses a variety of geometric data structures, depending on the task. Some operations (e.g., ray tracing) use a simple list of triangles that can be compactly encoded and efficiently cached. For more sophisticated geometric tasks like mesh editing and sampling, a simple triangle list is no longer sufficient (or leads to unnecessarily poor asymptotic performance). Most actions in MeshEdit mode therefore use a topological data structure called a _halfedge mesh_ (also known as a _doubly-connected_ edge list), which provides a good tradeoff between simplicity and sophistication.
+Cardinal3D uses a variety of geometric data structures, depending on the task. Some operations (e.g., ray tracing) use a simple list of triangles that can be compactly encoded and efficiently cached. For more sophisticated geometric tasks like mesh editing and sampling, a simple triangle list is no longer sufficient (or leads to unnecessarily poor asymptotic performance). Most actions in MeshEdit mode therefore use a topological data structure called a _halfedge mesh_ (also known as a _doubly-connected_ edge list), which provides a good tradeoff between simplicity and sophistication.
 
 ### The Halfedge Data Structure
 
@@ -39,11 +39,11 @@ This list emphasizes that it is really the **halfedges** that connect everything
 
 In some sense, a halfedge mesh is kind of like a supercharged linked list. For instance, the halfedges around a given face (connected by `next` pointers) form a sort of "cyclic" linked list, where the tail points back to the head.
 
-A nice consequence of the halfedge representation is that any valid halfedge mesh **must** be manifold and orientable. Scotty3D will therefore only produce manifold, oriented meshes as output (and will complain if the input does not satisfy these criteria).
+A nice consequence of the halfedge representation is that any valid halfedge mesh **must** be manifold and orientable. Cardinal3D will therefore only produce manifold, oriented meshes as output (and will complain if the input does not satisfy these criteria).
 
 ### The `Halfedge_Mesh` Class
 
-The Scotty3D skeleton code already provides a fairly sophisticated implementation of the half edge data structure, in the `Halfedge_Mesh` class (see `geometry/halfedge.h` and `geometry/halfedge.cpp`). Although the detailed implementation may appear a bit complicated, the basic interface is not much different from the abstract description given above. For instance, suppose we have a face f and want to print out the positions of all its vertices. We would write a routine like this:
+The Cardinal3D skeleton code already provides a fairly sophisticated implementation of the half edge data structure, in the `Halfedge_Mesh` class (see `geometry/halfedge.h` and `geometry/halfedge.cpp`). Although the detailed implementation may appear a bit complicated, the basic interface is not much different from the abstract description given above. For instance, suppose we have a face f and want to print out the positions of all its vertices. We would write a routine like this:
 
     void printVertexPositions(FaceRef f) {
       HalfEdgeRef h = f->halfedge(); // get the first halfedge of the face

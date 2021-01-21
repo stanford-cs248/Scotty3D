@@ -6,7 +6,7 @@ permalink: /meshedit/global/linear/
 
 # Linear Subdivision
 
-For an in-practice example, see the [User Guide](/Scotty3D/guide/model).
+For an in-practice example, see the [User Guide](/Cardinal3D/guide/model).
 
 Unlike most other global remeshing operations, linear (and Catmull-Clark) subdivision will proceed by completely replacing the original halfedge mesh with a new one. The high-level procedure is:
 
@@ -14,7 +14,7 @@ Unlike most other global remeshing operations, linear (and Catmull-Clark) subdiv
 2.  Generate a list of polygons for the new mesh, as a list of indices into the new vertex list (a la "polygon soup").
 3.  Using these two lists, rebuild the halfedge connectivity from scratch.
 
-Given these lists, `Halfedge_Mesh::from_poly` will take care of allocating halfedges, setting up `next` and `twin` pointers, etc., based on the list of polygons generated in step 2---this routine is already implemented in the Scotty3D skeleton code.
+Given these lists, `Halfedge_Mesh::from_poly` will take care of allocating halfedges, setting up `next` and `twin` pointers, etc., based on the list of polygons generated in step 2---this routine is already implemented in the Cardinal3D skeleton code.
 
 Both linear and Catmull-Clark subdivision schemes will handle general _n_-gons (i.e., polygons with _n_ sides) rather than, say, quads only or triangles only. Each _n_-gon (including but not limited to quadrilaterals) will be split into _n_ quadrilaterals according to the following template:
 
@@ -52,7 +52,7 @@ Recall that in linear and Catmull-Clark subdivision _all polygons are subdivided
 
 These vertices are then connected up to form quadrilaterals (_n_ quadrilaterals for each _n_-gon in the input mesh). Rather than directly modifying the halfedge connectivity, these new quads will be collected in a much simpler mesh data structure: a list of polygons. Note that with this subdivision scheme, _every_ polygon in the output mesh will be a quadrilateral, even if the input contains triangles, pentagons, etc.
 
-In Scotty3D, a list of polygons can be declared as
+In Cardinal3D, a list of polygons can be declared as
 
     std::vector<std::vector<Index>> quads;
 

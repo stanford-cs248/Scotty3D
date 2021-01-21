@@ -8,9 +8,9 @@ permalink: /meshedit/global/simplify/
 
 ![Surface simplification via quadric error metric](quad_simplify.png)
 
-For an in-practice example, see the [User Guide](/Scotty3D/guide/model).
+For an in-practice example, see the [User Guide](/Cardinal3D/guide/model).
 
-Just as with images, meshes often have far more samples than we really need. The simplification method in Scotty3D simplifies a given triangle mesh by applying _quadric error simplification_ (note that this method is for **triangle meshes only**!). This method was originally developed at CMU by Michael Garland and Paul Heckbert, in their paper [Surface Simplification Using Quadric Error Metrics](http://www.cs.cmu.edu/~./garland/quadrics/quadrics.html). (Looking at this paper -- or the many slides and presentations online that reference it -- may be very helpful in understanding and implementing this part of the assignment!)
+Just as with images, meshes often have far more samples than we really need. The simplification method in Cardinal3D simplifies a given triangle mesh by applying _quadric error simplification_ (note that this method is for **triangle meshes only**!). This method was originally developed at CMU by Michael Garland and Paul Heckbert, in their paper [Surface Simplification Using Quadric Error Metrics](http://www.cs.cmu.edu/~./garland/quadrics/quadrics.html). (Looking at this paper -- or the many slides and presentations online that reference it -- may be very helpful in understanding and implementing this part of the assignment!)
 
 The basic idea is to iteratively collapse edges until we reach the desired number of triangles. The more edges we collapse, the simpler the mesh becomes. The only question is: which edges should we collapse? And where should we put the new vertex when we collapse an edge? Finding the sequence of edge collapses (and vertex positions) that give an _optimal_ approximation of the surface would be very difficult -- likely impossible! Garland and Heckbert instead proposed a simple, greedy scheme that works quite well in practice, and is the basis of many mesh simplification tools today. Roughly speaking, we're going to write down a function that measures the distance to a given triangle, and then "accumulate" this function as many triangles get merged together.
 
@@ -33,7 +33,7 @@ where T denotes the transpose of a vector. The term _vv_^T is an [outer product]
     ac    bc    c^2  cd
     ad    bd    cd   d^2
 
-but in Scotty3D it can be constructed by simply calling the method `outer( Vec4, Vec4 )` in `lib/mat4.h` that takes a pair of vectors in homogeneous coordinates and returns the outer product as a 4x4 matrix. We will refer to this matrix as a "quadric," because it also describes a [quadric surface](https://en.wikipedia.org/wiki/Quadric).
+but in Cardinal3D it can be constructed by simply calling the method `outer( Vec4, Vec4 )` in `lib/mat4.h` that takes a pair of vectors in homogeneous coordinates and returns the outer product as a 4x4 matrix. We will refer to this matrix as a "quadric," because it also describes a [quadric surface](https://en.wikipedia.org/wiki/Quadric).
 
 The matrix _K_ tells us something about the distance to a plane. We can also get some idea of how far we are from a _vertex_ by considering the sum of the squared distances to the planes passing through all triangles that touch that vertex. In other words, we will say that the distance to a small neighborhood around the vertex i can be approximated by the sum of the quadrics on the incident faces ijk:
 

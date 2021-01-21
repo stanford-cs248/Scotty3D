@@ -6,7 +6,7 @@ permalink: /meshedit/global/
 
 # Global Mesh Operations
 
-In addition to local operations on mesh connectivity, Scotty3D provides several global remeshing operations (as outlined in the [User Guide](/Scotty3D/guide/model)). Two different mechanisms are used to implement global operations:
+In addition to local operations on mesh connectivity, Cardinal3D provides several global remeshing operations (as outlined in the [User Guide](/Cardinal3D/guide/model)). Two different mechanisms are used to implement global operations:
 
 *   _Repeated application of local operations._ Some mesh operations are most easily expressed by applying local operations (edge flips, etc.) to a sequence of mesh elements until the target output is achieved. A good example is [mesh simplification](simplify), which is a greedy algorithm that collapses one edge at a time.
 *   _Global replacement of the mesh._ Other mesh operations are better expressed by temporarily storing new mesh elements in a simpler mesh data structure (e.g., an indexed list of faces) and completely re-building the halfedge data structure from this data. A good example is [Catmull-Clark subdivision](catmull), where every polygon must be simultaneously split into quadrilaterals.
@@ -19,7 +19,7 @@ In image processing, we often have a low resolution image that we want to displa
 
 In geometry processing, one encounters the same situation: we may have a low-resolution polygon mesh that we wish to upsample for display, simulation, etc. Simply splitting each polygon into smaller pieces doesn't help, because it does nothing to alleviate blocky silhouettes or chunky features. Instead, we need an upsampling scheme that nicely interpolates or approximates the original data. Polygon meshes are quite a bit trickier than images, however, since our sample points are generally at _irregular_ locations, i.e., they are no longer found at regular intervals on a grid.
 
-Three subdivision schemes are supported by Scotty3D: [Linear](linear), [Catmull-Clark](catmull), and [Loop](loop). The first two can be used on any polygon mesh without boundary, and should be implemented via the global replacement strategy described above. Loop subdivision can be implemented using repeated application of local operations. For further details, see the linked pages.
+Three subdivision schemes are supported by Cardinal3D: [Linear](linear), [Catmull-Clark](catmull), and [Loop](loop). The first two can be used on any polygon mesh without boundary, and should be implemented via the global replacement strategy described above. Loop subdivision can be implemented using repeated application of local operations. For further details, see the linked pages.
 
 ## Performance
 

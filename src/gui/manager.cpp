@@ -969,7 +969,7 @@ void Manager::UIsettings() {
 void Manager::UIstudent() {
     if(!debug_shown) return;
     ImGui::Begin("Debug Data", &debug_shown, ImGuiWindowFlags_NoSavedSettings);
-#ifndef SCOTTY3D_BUILD_REF
+#ifndef CARDINAL3D_BUILD_REF
     student_debug_ui();
 #endif
     ImGui::End();

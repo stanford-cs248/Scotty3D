@@ -6,7 +6,7 @@ permalink: /guide/render/
 
 # Render
 
-Welcome! This is Scotty3D's realistic, globally illuminated renderer, capable of creating images of complex scenes using path tracing.
+Welcome! This is Cardinal3D's realistic, globally illuminated renderer, capable of creating images of complex scenes using path tracing.
 
 ## Render Window
 

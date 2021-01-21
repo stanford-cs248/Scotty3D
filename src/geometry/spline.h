@@ -136,7 +136,7 @@ private:
     Spline<T> head;
 };
 
-#ifdef SCOTTY3D_BUILD_REF
+#ifdef CARDINAL3D_BUILD_REF
 #include "../reference/spline.inl"
 #else
 #include "../student/spline.inl"

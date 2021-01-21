@@ -4,7 +4,7 @@
 #include <SDL2/SDL.h>
 #include <imgui/imgui.h>
 
-#ifndef SCOTTY3D_BUILD_REF
+#ifndef CARDINAL3D_BUILD_REF
 #include "../student/debug.h"
 #endif
 

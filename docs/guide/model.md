@@ -6,7 +6,7 @@ permalink: /guide/model/
 
 # Model
 
-When in `Model` mode, Scotty3D provides a polygon-based 3D modeler with basic
+When in `Model` mode, Cardinal3D provides a polygon-based 3D modeler with basic
 subdivision capabilities. The central modeling paradigm is "box modeling", i.e.,
 starting with a simple cube, you can add progressively more detail to produce
 interesting 3D shapes. You can also use _subdivision_ to get smooth
@@ -15,11 +15,11 @@ approximations of these shapes.
 MeshEdit supports four basic actions on mesh elements (move, rotate, scale, and bevel), 
 plus a collection of local and global mesh editing commands.
 
-Note that MeshEdit (and more broadly, Scotty3D) will only operate on meshes that
+Note that MeshEdit (and more broadly, Cardinal3D) will only operate on meshes that
 are _manifold_ (i.e., the union of faces containing any given vertex _v_ is a
-topological disk). Likewise, all mesh operations in Scotty3D will preserve the
+topological disk). Likewise, all mesh operations in Cardinal3D will preserve the
 manifold property, i.e., manifold input will always get mapped to manifold
-output. This property is key for ensuring that many algorithms in Scotty3D are
+output. This property is key for ensuring that many algorithms in Cardinal3D are
 "well-behaved", and that it always produces nice output for other programs to
 use. If you load a mesh that is non-manifold, you can still use it in your scene
 and render with it, but editing will not be supported.

@@ -8,7 +8,7 @@ permalink: /guide/
 
 ## Modes and Actions
 
-The basic paradigm in Scotty3D is that there are six different _modes_, each
+The basic paradigm in Cardinal3D is that there are six different _modes_, each
 of which lets you perform certain class of actions. For instance, in `Model` mode, you
 can perform actions associated with modeling, such as moving mesh elements and performing global mesh operations. 
 When in `Animate` mode, you can perform actions associated with animation. Etc. 
@@ -33,7 +33,7 @@ The camera can be manipulated in three ways:
 ## Global Preferences
 
 You can open the preferences window from the edit option in the menu bar.
-- Multisampling: this controls how many samples are used for MSAA when rendering scene objects in the Scotty3D interface. If your computer struggles to render complex scenes, try changing this to `1`. 
+- Multisampling: this controls how many samples are used for MSAA when rendering scene objects in the Cardinal3D interface. If your computer struggles to render complex scenes, try changing this to `1`. 
 
 ## Global Undo
 
