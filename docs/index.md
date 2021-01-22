@@ -15,7 +15,7 @@ These pages describe how to set up and use Cardinal3D. Start here!
 - [Building Cardinal3D](build): build and run Cardinal3D on various platforms.
 - [User Guide](guide): learn the intended functionality for end users.
 
-The developer manual describes what you must implement to complete Cardinal3D. It is organized under the three main components of the software:
+The developer manual describes what you must implement to complete Cardinal3D. It is organized under the three main components of the software. Note that only MeshEdit is necessary for the assignment 2, but feel free to check the other two to have more fun with Cardinal3D. 
 - [MeshEdit](meshedit)
 - [PathTracer](pathtracer)
 - [Animation](animation)

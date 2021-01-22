@@ -23,7 +23,7 @@ The particular requirements, and the percentage of the grade (100 pts total) the
 * Four of the local operations: **EdgeCollapse**, **EdgeFlip**, **EdgeSplit** and **FaceBevel** (10 pts each)
 * Three of the global operations: **Triangulation**, **LinearSubdivision**, and **CatmullClarkSubdivision** (10 pts each)
 * One of: **LoopSubdivision**, **IsotropicRemeshing**, or **Simplification** (10 pts)
-* Create one beautiful 3D model using Scotty3D (15 pts)
+* Create one beautiful 3D model using Cardinal3D (15 pts)
 * Submit a suggested improvement to the assignment documentation on Piazza (5 pts)
 
 
